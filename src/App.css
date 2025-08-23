@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  background: #fff;
+  color: #241e11;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(36, 30, 17, 0.8);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar.scrolled {
+  background: rgba(20, 20, 20, 0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-right a:hover {
+  color: red;
+  transform: scale(1.05);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-right {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(36, 30, 17, 0.95);
+    flex-direction: column;
+    width: 220px;
+    padding: 1rem;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border-radius: 0 0 0 8px;
   }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .burger {
+    display: flex; 
+  }
+  
+  .nav-left {
+    flex: 1;
+  }
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #111, #e63946);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 span {
+  color: red;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: red;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #c20e0e;
+  transform: translateY(-2px);
+}
+
+/* About */
+.about {
+  background: #fafafa;
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: red;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 200px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+/* Services */
+.services {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  color: red;
+}
+
+.service-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background: #241e11;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contact h2 {
+  color: red;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.contact .btn {
+  margin-top: 1rem;
 }
