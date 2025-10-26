@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Услуги",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "title": "Добро пожаловать на",
+    "titleHighlight": "Gatana.ge",
+    "subtitle": "Мы предлагаем надежные и профессиональные услуги."
+  },
+  "about": {
+    "title": "Что мы предлагаем",
+    "description": "Мы команда профессионалов, сосредоточенная на качестве, надежности и результатах. Наша цель - предоставить клиентам лучший опыт."
+  },
+  "contact": {
+    "title": "Контакты",
+    "phone": "+995 555 55 00 32",
+    "email": "info@gatana.ge",
+    "socialTitle": "Следите за нами",
+    "sendMessage": "Напишите нам",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to",
+    "titleHighlight": "Gatana.ge",
+    "subtitle": "We offer reliable and professional services."
+  },
+  "about": {
+    "title": "What We Offer",
+    "description": "We are a team of professionals focused on quality, reliability, and results. Our goal is to provide clients with the best experience."
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "+995 555 55 00 32",
+    "email": "info@gatana.ge",
+    "socialTitle": "Follow Us",
+    "sendMessage": "Send us a message",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok"
+  }
+}
