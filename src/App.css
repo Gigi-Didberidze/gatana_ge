@@ -539,3 +539,54 @@ body {
 .contact .btn {
   margin-top: 2rem;
 }
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    min-height: 500px;
+    padding: 1rem;
+  }
+
+  .slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+}
