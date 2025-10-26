@@ -430,10 +430,33 @@ body {
   gap: 1rem;
   margin: 1rem 0;
   font-size: 1.1rem;
+  text-decoration: none; /* make anchor version look like button */
+  color: white;
 }
 
 .contact-icon {
   font-size: 1.5rem;
+}
+
+/* Prominent call CTA styling */
+.call-button {
+  background: red;
+  color: #fff;
+  padding: 0.9rem 1.25rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.call-button:hover {
+  background: #c20e0e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+.call-button .contact-icon {
+  font-size: 1.6rem;
 }
 
 .social-links {

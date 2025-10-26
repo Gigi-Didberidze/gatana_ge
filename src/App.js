@@ -5,6 +5,8 @@ import slide1 from "./assets/slide1.jpeg";
 import slide2 from "./assets/slide2.jpeg";
 import slide3 from "./assets/slide3.jpeg";
 import gatanaLogo from "./assets/gatana.png";
+import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +37,7 @@ function App() {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-left">
           <img src={logo} alt="Company Logo" className="logo" />
-          <span className="brand-text">gatana.ge</span>
+          <span className="brand-text">Gatana.ge</span>
         </div>
 
         <div className="burger" onClick={toggleMenu}>
@@ -76,7 +78,7 @@ function App() {
 
         <div className="hero-content">
           <h1>
-            კეთილი იყოს თქვენი მობრძანება <span>gatana.ge</span>-ზე
+            კეთილი იყოს თქვენი მობრძანება <span>Gatana.ge</span>-ზე
           </h1>
           <p>ჩვენ გთავაზობთ სანდო და პროფესიონალურ მომსახურებას.</p>
           {/* <a href="#services" className="btn">
@@ -116,14 +118,14 @@ function App() {
       <section id="contact" className="section contact">
         <h2>კონტაქტი</h2>
         <div className="contact-info">
-          <div className="contact-item">
-            <span className="contact-icon">📞</span>
+          <a href="tel:+99555550032" className="contact-item call-button" aria-label="Call us">
+            <span className="contact-icon"><FiPhone /></span>
             <span>+995 555 55 00 32</span>
-          </div>
-          <div className="contact-item">
-            <span className="contact-icon">✉</span>
+          </a>
+          <a href="mailto:info@gatana.ge" className="contact-item" aria-label="Email us">
+            <span className="contact-icon"><FiMail /></span>
             <span>info@gatana.ge</span>
-          </div>
+          </a>
         </div>
 
         <div className="social-links">
@@ -135,7 +137,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="social-icon">📘</div>
+              <div className="social-icon" aria-hidden="true"><SiFacebook /></div>
               <div className="social-text">
                 <span className="social-name">Facebook</span>
                 <span className="social-handle">@gatana.ge</span>
@@ -148,7 +150,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="social-icon">📷</div>
+              <div className="social-icon" aria-hidden="true"><SiInstagram /></div>
               <div className="social-text">
                 <span className="social-name">Instagram</span>
                 <span className="social-handle">@gatana.ge</span>
@@ -161,7 +163,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="social-icon">🎵</div>
+              <div className="social-icon" aria-hidden="true"><SiTiktok /></div>
               <div className="social-text">
                 <span className="social-name">TikTok</span>
                 <span className="social-handle">@gatana.ge</span>
