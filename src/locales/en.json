@@ -14,6 +14,17 @@
     "title": "What We Offer",
     "description": "We are a team of professionals focused on quality, reliability, and results. Our goal is to provide clients with the best experience."
   },
+  "services": {
+    "title": "Gatana.ge offers",
+    "subtitle": "Construction and renovation waste disposal",
+    "cheap": "Cheap",
+    "efficient": "Efficient",
+    "reliable": "Reliable",
+    "bins": "We have 9 cubic bins.",
+    "inStock": "We have bins in stock.",
+    "serve": "We serve: private individuals, construction sites, shops and offices.",
+    "contact": "For details contact us at: 555 55 00 32"
+  },
   "contact": {
     "title": "Contact",
     "phone": "+995 555 55 00 32",

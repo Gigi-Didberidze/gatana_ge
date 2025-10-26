@@ -459,6 +459,77 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Services Section Styling */
+.services-info {
+  flex: 1;
+}
+
+.services-subtitle {
+  font-size: 1.1rem;
+  color: red;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.services-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.checkmark {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.services-details {
+  margin: 1.5rem 0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.services-details p {
+  margin: 0.5rem 0;
+}
+
+.services-contact {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: red;
+  font-size: 1rem;
+}
+
+/* Mobile Services Styling */
+@media (max-width: 768px) {
+  .services-subtitle {
+    font-size: 1rem;
+  }
+
+  .feature {
+    font-size: 1rem;
+  }
+
+  .services-details {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .services-contact {
+    font-size: 0.95rem;
+  }
+}
+
 /* Contact */
 .contact {
   text-align: center;

@@ -113,12 +113,35 @@ function App() {
         </div>
       </section>
 
-      {/* About */}
+      {/* About / Services */}
       <section id="about" className="section about">
         <div className="about-container">
-          <div className="about-text">
-            <h2>{t("about.title")}</h2>
-            <p>{t("about.description")}</p>
+          <div className="about-text services-info">
+            <h2>{t("services.title")}</h2>
+            <p className="services-subtitle">{t("services.subtitle")}</p>
+            
+            <div className="services-features">
+              <div className="feature">
+                <span className="checkmark">✓</span>
+                <span>{t("services.cheap")}</span>
+              </div>
+              <div className="feature">
+                <span className="checkmark">✓</span>
+                <span>{t("services.efficient")}</span>
+              </div>
+              <div className="feature">
+                <span className="checkmark">✓</span>
+                <span>{t("services.reliable")}</span>
+              </div>
+            </div>
+
+            <div className="services-details">
+              <p>• {t("services.bins")}</p>
+              <p>• {t("services.inStock")}</p>
+              <p>• {t("services.serve")}</p>
+            </div>
+
+            <p className="services-contact">{t("services.contact")}</p>
           </div>
           <div className="about-image">
             <img src={gatanaLogo} alt="About" className="gatana-logo" />
