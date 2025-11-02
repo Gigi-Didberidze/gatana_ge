@@ -1,45 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ef4444" />
+    
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Gatana.ge - პროფესიონალური ნარჩენების მართვის სერვისი საქართველოში. სამშენებლო ნარჩენების გატანა და გადაყრა. ხელმისაწვდომი, სანდო და ეფექტური მომსახურება."
     />
+    <meta name="keywords" content="ნარჩენების გადაყრა, სამშენებლო ნარჩენები, ნაგვის ურნები, waste management, gatana, georgia, ნარჩენების მართვა" />
+    <meta name="author" content="Gatana.ge" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gatana.ge/" />
+    <meta property="og:title" content="Gatana.ge - სამშენებლო ნარჩენების გატანა და გადაყრა" />
+    <meta property="og:description" content="პროფესიონალური ნარჩენების მართვის სერვისი საქართველოში. ხელმისაწვდომი, სანდო და ეფექტური." />
+    <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gatana.ge/" />
+    <meta property="twitter:title" content="Gatana.ge - სამშენებლო ნარჩენების გატანა" />
+    <meta property="twitter:description" content="პროფესიონალური ნარჩენების მართვის სერვისი საქართველოში" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/logo.png" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="ka" href="https://gatana.ge/" />
+    <link rel="alternate" hreflang="en" href="https://gatana.ge/" />
+    <link rel="alternate" hreflang="ru" href="https://gatana.ge/" />
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gatana.ge",
+      "description": "პროფესიონალური ნარჩენების მართვის სერვისი საქართველოში",
+      "url": "https://gatana.ge",
+      "telephone": "+995555500032",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GE",
+        "addressLocality": "Tbilisi"
+      },
+      "sameAs": [
+        "https://www.facebook.com/gatana.ge",
+        "https://www.instagram.com/gatana.ge",
+        "https://www.tiktok.com/@gatana.ge"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
 
+    <title>Gatana.ge - სამშენებლო ნარჩენების გატანა, გადაყრა | Waste Management Georgia</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>თქვენ უნდა ჩართოთ JavaScript ამ აპლიკაციის გამოსაყენებლად / You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

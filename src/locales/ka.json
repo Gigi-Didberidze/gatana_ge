@@ -6,7 +6,7 @@
     "contact": "კონტაქტი"
   },
   "hero": {
-    "title": "კეთილი იყოს თქვენი მობრძანება",
+    "title": "სამშენებლო ნარჩენების გატანა, გადაყრა",
     "titleHighlight": "Gatana.ge",
     "subtitle": "ჩვენ გთავაზობთ სანდო და პროფესიონალურ მომსახურებას."
   },
@@ -28,9 +28,9 @@
   "contact": {
     "title": "კონტაქტი",
     "phone": "+995 555 55 00 32",
-    "email": "info@gatana.ge",
+    "email": "gatana.eco@gmail.com",
     "socialTitle": "ჩვენი სოციალური ქსელები",
-    "sendMessage": "მოგვწერეთ",
+    "sendMessage": "დაგვიკავშირდით",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "tiktok": "TikTok"
