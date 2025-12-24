@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gatana.ge/</loc>
-    <lastmod>2024-12-14</lastmod>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
     <xhtml:link rel="alternate" hreflang="ka" href="https://gatana.ge/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://gatana.ge/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://gatana.ge/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gatana.ge/" />
+
+    <image:image>
+      <image:loc>https://gatana.ge/gatana-logo.png</image:loc>
+      <image:title>Gatana.ge Logo - ნარჩენების მართვა</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gatana.ge/gatana-slide1.jpeg</image:loc>
+      <image:title>სამშენებლო ნარჩენების გატანა თბილისში</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gatana.ge/gatana-slide2.jpeg</image:loc>
+      <image:title>ნაგვის ურნების და ბუნკერების მომსახურება</image:title>
+    </image:image>
   </url>
 </urlset>
