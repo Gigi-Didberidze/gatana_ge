@@ -252,9 +252,9 @@ function App() {
           
           <div className="contact-info">
             <a 
-              href="tel:+995555500032" 
+              href="tel:+995555550032" 
               className="contact-card" 
-              aria-label="Call Gatana at +995 555 50 00 32"
+              aria-label="Call Gatana at +995 555 55 00 32"
               itemProp="telephone"
             >
               <FiPhone className="contact-icon" aria-hidden="true" />
@@ -313,9 +313,9 @@ function App() {
 
       {/* Floating Call Button */}
       <a 
-        href="tel:+995555500032" 
+        href="tel:+995555550032" 
         className="floating-call-button" 
-        aria-label="Call Gatana at +995 555 50 00 32"
+        aria-label="Call Gatana at +995 555 55 00 32"
       >
         <FiPhone />
       </a>
