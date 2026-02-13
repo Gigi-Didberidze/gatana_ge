@@ -7,7 +7,7 @@ import slide2 from "./assets/slide2.jpeg";
 import slide3 from "./assets/slide3.jpeg";
 import gatanaLogo from "./assets/gatana.png";
 import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
-import { FiPhone, FiMail, FiCheck, FiPackage, FiTruck, FiShield } from "react-icons/fi";
+import { FiPhone, FiCheck, FiPackage, FiTruck, FiShield } from "react-icons/fi";
 
 function App() {
   const { t, i18n } = useTranslation();
